@@ -1,0 +1,51 @@
+@import url(./reset.css);
+
+body {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #214E41;
+}
+.button {
+    display: inline-flex;
+    background-color: #43806C;
+    color: #ffff;
+    padding: 10px 14px;
+    border-radius: 5px;
+
+}
+
+
+
+// header // 
+.header-inner {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    &-right {
+        display: flex;
+    }
+}
+.logo-nav {
+    display: flex;
+    list-style: none;
+    column-gap: 25px;
+}
+.login {
+    padding: 0 29px;
+    display: flex;
+    margin: 10px 30px;
+    justify-content: center;
+        &-link {
+            &-img{
+                max-width: 14px;
+                max-height: 8px;
+                margin: 3px 0 0 5px;
+                padding: 0;
+            }
+        }
+
+}
