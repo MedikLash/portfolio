@@ -1,7 +1,7 @@
 @import url(./reset.css);
 
 body {
-    width: 100%;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -11,28 +11,62 @@ a {
 }
 .button {
     display: inline-flex;
-    background-color: #43806C;
+    background: #43806C;
     color: #ffff;
     padding: 10px 14px;
     border-radius: 5px;
+    &:hover {
+        background: lighten($color: #43806C, $amount: 10%);
+        color: red;
+    }
 
+}
+.wrapper-outer {
+    width: 100%;
+}
+
+.wrapper-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #214E41;
 }
 
 
 
 // header // 
+.header-outer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .header-inner {
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
     &-right {
         display: flex;
+        align-items: center;
+        padding: 19px 0 41px 0;
     }
+}
+.header-inner-left {
+    margin: 41px 33px;
 }
 .logo-nav {
     display: flex;
     list-style: none;
     column-gap: 25px;
+    padding: 0 65px;
+    &-item {
+        transition: .2s;
+        &:hover {
+            color: lighten($color: #43806C, $amount: 10%);
+        }
+    } 
 }
 .login {
     padding: 0 29px;
@@ -49,3 +83,15 @@ a {
         }
 
 }
+.header-button {
+    margin: 0 15px;
+}
+
+// header //
+
+// insurance //
+.insurance-outer {
+    background: url(/img/Rectangle.png) center/100% no-repeat;
+}
+
+// insurance //

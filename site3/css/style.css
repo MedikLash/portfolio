@@ -1,6 +1,6 @@
 @import url(./reset.css);
 body {
-  width: 100%;
+  margin: 0 auto;
 }
 
 a {
@@ -12,10 +12,34 @@ a {
 
 .button {
   display: inline-flex;
-  background-color: #43806C;
+  background: #43806C;
   color: white;
   padding: 10px 14px;
   border-radius: 5px;
+}
+.button:hover {
+  background: #55a188;
+  color: red;
+}
+
+.wrapper-outer {
+  width: 100%;
+}
+
+.wrapper-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #214E41;
+}
+
+.header-outer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-inner {
@@ -25,6 +49,12 @@ a {
 }
 .header-inner-right {
   display: flex;
+  align-items: center;
+  padding: 19px 0 41px 0;
+}
+
+.header-inner-left {
+  margin: 41px 33px;
 }
 
 .logo-nav {
@@ -32,6 +62,13 @@ a {
   list-style: none;
   -moz-column-gap: 25px;
        column-gap: 25px;
+  padding: 0 65px;
+}
+.logo-nav-item {
+  transition: 0.2s;
+}
+.logo-nav-item:hover {
+  color: #55a188;
 }
 
 .login {
@@ -45,4 +82,12 @@ a {
   max-height: 8px;
   margin: 3px 0 0 5px;
   padding: 0;
+}
+
+.header-button {
+  margin: 0 15px;
+}
+
+.insurance-outer {
+  background: url(/img/Rectangle.png) center/100% no-repeat;
 }/*# sourceMappingURL=style.css.map */
